@@ -1,0 +1,683 @@
+body {
+
+	color: $white;
+    
+
+}
+
+//The sticky class is added to the navbar with JS when it reaches its scroll position 
+
+.sticky {
+  position: fixed;
+  top: 24px;
+  width: 100%;
+
+  @media (max-width: $md) {
+
+  	position: relative;
+  }
+}
+
+
+#NavigationTranspartent {
+
+   background: transparent;
+   z-index: 1;
+
+   @media (max-width: $sm) {
+
+   	 display: none !important;
+   }
+   
+
+.container-nav {
+
+   display: flex;
+   background-color: rgba(50, 50, 50, .9);
+   flex-direction: row;
+   margin-top: 50px;
+   height: 60px;
+   justify-content: space-between;
+
+
+
+   
+
+   
+
+
+}
+
+
+
+
+.after-nav {
+
+	display: flex;
+	align-items: center;
+	padding-left: 50px;
+
+
+	p {
+
+	   font-size: 1.5em;
+       font-weight: 100;
+       line-height: 1;
+       color: #919191;
+       text-shadow: 0 0 0;
+       white-space: nowrap;
+
+	}
+	
+
+}
+
+
+.after-nav1 {
+
+    display: flex;
+    align-items: center;
+
+    
+
+
+    h2 {
+
+
+    }
+
+	ul {
+		display: flex;
+		list-style: none;
+
+
+		li {
+			display: flex;
+			padding-inline: 8px;
+			
+
+			a{
+
+				text-decoration: none;
+				color: #a3a3a3;
+			}
+
+			a:hover {
+				
+				color: $white;
+			}
+
+		}
+	}
+
+
+}
+
+.after-nav-button {
+
+    display: flex;
+    text-align: center;
+
+   
+
+
+    
+    button {
+
+    	padding-right: 40px;
+        padding-left: 40px;
+        background-color: #e6042a;
+        color: white;
+        border: 0 none;
+        font-weight: 450;
+        cursor: pointer;
+        outline: none;
+    }
+	
+}
+
+}
+
+
+.picture-1 {
+
+	picture {
+
+		position: relative;
+
+		img {
+
+			@media (max-width: 1920px) {
+
+			width: 100%;
+		  }
+		}
+	}
+}
+// Button on single image 
+
+.textOfProduct {
+
+	position: absolute;
+	bottom: -55px;
+    left: 143px;
+
+    @media (max-width: $xxl){
+    	bottom: 300px;
+    }
+
+    @media (max-width: 1024) {
+
+    	bottom: 550px;
+        left: 50px;
+    }
+
+    @media (max-width: $xl) {
+
+    	bottom: 470px;
+        left: 33px;
+    }
+
+    @media (max-width: $md) {
+
+    	bottom: 470px;
+        left: 33px;
+    }
+
+    @media (max-width: $sm) {
+
+    	visibility: hidden;
+    }
+
+    h2 {
+
+    	font-size: 1.5em;
+        margin: 0 0 2px;
+        font-weight: 400;
+        float: none;
+    }
+
+    p {
+         line-height: 1.8em;
+         font-size: 1.125em;
+         font-weight: 300;
+         float: none;
+
+    }
+
+    button {
+
+    	background-color: transparent;
+    	color: $white;
+    	padding: 20px 40px 20px 40px;
+        margin-top: 7px;
+        border-color: $white;
+        font-weight: 500;
+        font-size: 0.8em;
+        
+    }
+
+    button:hover {
+
+    	background-color: $white;
+    	color: #000;
+    	border-color: $white;
+    	
+    }
+}
+
+
+.SingleProductText {
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+
+	h2 {
+
+		font-size: 3.375em;
+		margin-bottom: 0.85185rem;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: 0.15em;
+		word-break: word-break;
+	}
+
+	p {
+
+		width: 60%;
+		margin: 0 auto;
+		line-height: 1.9em;
+		color: #919191;
+		font-size: 1em;
+        line-height: 1.4375;
+	}
+
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  //margin: auto;
+  margin-top: 100px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 100%;
+
+   img {
+
+   	 @media (max-width: 1920px) {
+
+			width: 100%;
+		}
+   }
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+// Reviews seciton css
+
+.reviews {
+
+	display: grid;
+	grid-template-columns: 33.3333% 33.3333% 33.3333%;
+	text-align: -webkit-center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	blockquote{
+
+		width: 69.3333%;
+
+		p {
+			margin-bottom: 15px;
+			color: #919191;
+			line-height: 1.4375;
+		}
+
+		a {
+			color: #c7c7c7;
+			font-weight: 100;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $white;
+
+		i {
+			font-size: 60px;
+			margin-bottom: 20px;
+		}
+	}
+}
+  
+
+  .proba {
+  	width: 69.111%;
+  }
+
+// HIGHLIGHTS SECTION OF CSS
+
+  .col-text {
+  height:40em;
+}
+
+.grid-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+
+.col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: rgba(21, 21, 21, 1);
+}
+
+
+.col-left {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.Aligner-item {
+  width: 60%;
+
+
+  p {
+
+  	padding-top: 10px;
+  	color: #919191;
+  }
+
+  h2 {
+
+  	  font-weight: 500;
+  }
+
+
+}
+.col-image {
+  background-size: cover;
+  background-position:center center;
+}
+
+@media (max-width: 640px) {
+  .grid-flex {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col {
+    order:vertical;
+  }
+  .col-left {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text div p {
+    padding: 1em;
+  }
+  .Aligner-item {
+    width: 90%;
+
+    h2 {
+    	padding-left: 16px;
+    }
+  }
+}
+
+
+/// green background
+
+  .col-text-1 {
+  height:40em;
+}
+.grid-flex-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  flex-direction: row; 
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: rgba(215, 255, 0, 1);
+  display: flex;
+}
+
+
+.col-left-1 {
+  -webkit-box-ordinal-group:-1;
+  -webkit-order: -1;
+  -ms-flex-order: -1;
+  order: -1;
+}
+.col-text-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+
+}
+.Aligner-item-1 {
+  width: 60%;
+
+  p {
+
+  	padding-top: 10px;
+  }
+
+  h2 {
+
+  	  font-weight: 500;
+  }
+
+}
+.col-video-1 {
+  
+  video {
+
+  	width: 100%;
+    height: 640px;
+    object-fit: none;
+
+
+  }
+
+}
+
+@media (max-width: 640px) {
+  .grid-flex-1 {
+    height: 40em;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    flex-direction: column; 
+   }
+  .col-1 {
+    order:vertical;
+
+  }
+  .col-left-1 {
+    -webkit-box-ordinal-group:0;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+  }
+  .col-text-1 div p {
+    padding: 1em;
+  }
+  .Aligner-item-1 {
+    width: 90%;
+  }
+
+  .col-video-1 {
+
+  	  video {
+  	  	height: 318px;
+  	  }
+  }
+
+  .Aligner-item-1 {
+
+  	h2 {
+  		padding-left: 16px;
+  	}
+  }
+}
+
+
+// Accordion css (something like dropdown menu)
+
+.backgound-hamburger-menu {
+
+	background-color: $white;
+	padding-bottom: 50px;
+
+	@media (max-width: $lg) {
+
+		padding-bottom: 25px;
+	}
+}
+
+.highlights-text {
+
+    text-align: center;
+    color: #000;
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    h2 {
+    	font-weight: 200;
+        font-size: 32px;
+
+        @media (max-width: $sm) {
+
+        	font-size: 20px;
+        	font-weight: 400;
+        	padding-bottom: 3px;
+        	padding-top: 3px;
+        }
+    }
+}
+
+.dropdown-margin {
+
+	margin: 5px 200px 5px 200px;
+
+	@media (max-width: $xxl) {
+
+		margin: 5px 150px 5px 150px;
+	}
+
+	@media (max-width: $xl) {
+
+		margin: 5px 100px 5px 100px;
+	}
+
+	@media (max-width: $lg) {
+
+		margin: 5px 70px 5px 70px;
+	}
+	
+
+}
+
+.dropdownBtn {
+
+	width: 100%;
+	text-align: start;
+	color: #000;
+	background-color: #E1E1E1;
+	font-size: 20px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: 500;
+
+}
+
+
+
+.dropdown-content {
+    display: none;
+	background-color: $white;
+	color: #000;
+	padding-top: 5px;
+
+	li {
+		padding: 5px;
+
+		@media (max-width: $sm) {
+
+			font-size: 18px;
+            text-align: -webkit-center;
+		}
+
+		
+	}
+}
+
+// call by js code
+.panel {
+
+  display: none;
+  overflow: hidden;
+}
+
+// this gives black color when its clicked
+.active {
+
+	background-color: #000;
+	color: $white;
+}
+
+.gallery {
+
+	img {
+
+		@media (max-width: 1920px) {
+
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+

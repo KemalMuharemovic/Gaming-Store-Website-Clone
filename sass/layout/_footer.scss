@@ -1,0 +1,289 @@
+footer {
+
+	color: $white;
+
+
+
+
+	.cijeli-footer {
+
+		display: flex;
+		background-color: #212121;
+		padding-bottom: 50px;
+
+		a:hover {
+
+			color: $white;
+		}
+
+		@media (max-width: $md) {
+
+           	 flex-wrap: wrap;
+           	 justify-content: center;
+            
+           }
+
+		.first-end-footer {
+
+			margin-left: 70px;
+			margin-right: 70px;
+
+			@media (max-width: $xl) {
+
+               margin-left: 20px;
+               margin-right: 20px;
+
+           }
+
+           @media (max-width: $md) {
+
+           	 flex: 0 0 auto;
+             width: 41.26776%;
+
+             margin-left: 0px;
+             margin-right: 0px;
+            
+           }
+
+           @media (max-width: $sm) {
+
+           	  width: 86%;
+           }
+
+           
+
+
+		}
+
+
+
+		div {
+
+		    display: block;
+            width: 22.267759564%;
+            flex: 1 0 0;
+            padding: 0 1.366120218%;
+
+
+            @media (max-width: $md) {
+
+           	 flex: 0 0 auto;
+             width: 41.26776%;
+            
+           }
+
+           @media (max-width: $sm) {
+
+           	  width: 86%;
+           	  
+           }
+
+
+
+		}
+
+	}
+
+	p {
+
+		font-size: 1.125em;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 0.83em;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #494949;
+
+        
+	}
+
+
+	li {
+
+		list-style: none;
+		padding: 10px 0;
+
+		a {
+
+			text-decoration: none;
+			color: #8d8d8d;
+
+		}
+	}
+
+
+	.end-of-footer {
+
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 35px;
+		padding-top: 35px;
+		color: #919191;
+		padding-left: 82px;
+        padding-right: 87px;
+
+
+         @media (max-width: $xl) {
+
+         	padding-left: 20px;
+         	padding-right: 20px;
+         	padding-bottom: 20px;
+         	padding-top: 20px;
+         }
+
+         @media (max-width: $sm) {
+
+				display: block;
+			}
+
+
+		img {
+
+		   width: 60px;
+           height: 55px;
+
+           @media (max-width: $sm) {
+
+           	width: 0px;
+           	height: 0px;
+           }
+
+		}
+
+		.span-text {
+
+			text-align: center;
+
+
+		}
+
+		.social-footer {
+
+			font-size: 30px;
+
+
+			@media (max-width: $sm) {
+
+				margin-top: 20px;
+			  }
+
+			a {
+				color: #605f63;
+				margin: 0 16px;
+
+				@media (max-width: $sm) {
+
+				margin: 0 30px;
+			  }
+
+
+			  @media (max-width: 375px){
+
+			  	margin: 0 24px;
+			  }
+
+
+			  @media (max-width: 320px) {
+
+			  	margin: 0 17px;
+			  }
+
+			}
+		}
+
+
+	}
+
+
+}
+
+@media (min-width: $md) {
+
+	.margin-for-accordion {
+
+		display: none;
+	}
+}
+
+
+
+@media (max-width: $sm) {
+
+
+
+footer {
+
+
+
+  .cijeli-footer {
+
+  	display: none;
+  }
+
+  .margin-for-accordion{
+
+    margin: 5px 5px 5px 5px;
+
+
+
+  }
+
+  .accordion {
+    background-color: #eee;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+
+  }
+
+  .active:after {
+
+    content: "\2212";
+
+  }
+
+  .active {
+
+  	background-color: #eb8934;
+	color: $white;
+
+
+  }
+
+  .panel12 {
+
+   display: none;
+   background-color: $white;
+   overflow: hidden;
+   padding: 0 10px;
+
+    a {
+    	color: #000;
+    	font-weight: 400;
+    }
+
+
+  }
+
+
+
+
+
+} // end of footer
+
+} // end of media $sm
+
+  
+

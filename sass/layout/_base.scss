@@ -1,0 +1,23 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  font-family: $roboto;
+
+}
+
+body {
+
+	background-color: $black;
+
+	@media (max-width: $md) {
+
+		width: auto!important;
+	}
+}
+
+.container {
+
+	max-width: 1420px;
+	margin: auto;
+}
