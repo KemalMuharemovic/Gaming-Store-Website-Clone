@@ -1,3 +1,8 @@
+<div align='center'>
+  <h2> Check this website here </h2>
+  <a href"https://kemalmuharemovic.github.io/Gaming-Store-Website-Clone/index.html">Click Here</a>
+  </div>
+
 <p align='center'>
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=KemalMuharemovic.KemalMuharemovic)
