@@ -1,6 +1,6 @@
 <div align='center'>
   <h2> Check this website "HERE" </h2>
-  [a link](https://kemalmuharemovic.github.io/Gaming-Store-Website-Clone/index.html)
+ https://kemalmuharemovic.github.io/Gaming-Store-Website-Clone/index.html
   </div>
 
 <p align='center'>
